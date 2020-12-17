@@ -1,0 +1,85 @@
+.main-app {
+  font-family: $fontfamily;
+
+  // .main-app__hidden-task
+
+  &__hidden-task {
+    
+  }
+}
+.hidden-task {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    
+    color: $dark-grey-color;
+  }
+
+  // .main-app__content
+
+  &__content {
+    width: 100%;
+    height: 100%;
+  }
+
+  // .main-app__header
+
+  &__header {
+    
+  }
+
+  // .main-app__title-block
+
+  &__title-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .main-app__task-list
+
+  &__task-list {
+  }
+
+  // .main-app__list
+
+  &__list {
+  }
+
+  // .main-app__task-item
+
+  &__task-item {
+  }
+
+  // .main-app__add-task
+
+  &__add-task {
+  }
+}
+
+.title-group-task {
+
+  // .title-group-task__name
+
+  &__name {
+    display: block;
+  }
+}
+.task-item {
+
+  // .task-item__checkbox
+
+  &__checkbox {
+  }
+
+  // .task-item__name
+
+  &__name {
+
+  }
+}

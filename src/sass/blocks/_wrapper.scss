@@ -1,4 +1,4 @@
-.wrapper-inner  {
+.main-wrapper {
   width: 100%;
   height: 95vh;
   margin-top: 20px;
@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.navbar-app {
+.sidebar-app {
   padding: 0;
   height: 100vh;
   width: 100%;
@@ -24,5 +24,5 @@
 }
 
 .inner {
-  padding: 28px 57px;
+  padding: 0 57px;
 }

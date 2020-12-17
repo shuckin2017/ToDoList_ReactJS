@@ -14,36 +14,79 @@
 <body>
    <div class="wrapper">
        <div class="container-xl">
-           <div class="wrapper-inner">
+           <div class="main-wrapper">
                 <div class="row d-md-flex">
                     <div class="col-xl-4 col-lg-4 col-md-12 pr-0">
-                        <div class="navbar-app inner">
-                            <div class="navbar-app__header">
-                                <span class="navbar-app__title">ToDo List React JS</span>
+                        
+                        <aside class="sidebar-app">
+                            <div class="sidebar-app__header inner">
+                                <span class="sidebar-app__title">ToDo List React JS</span>
                             </div>
-                            <div class="navbar-app__main">
-                                <button class="navbar-app__btn">
+                            <div class="sidebar-app__main inner">
+                                <div class="sidebar-app__button">
+                                    <button class="sidebar-app__btn">
+                                        <svg class="icon svg">
+                                            <use xlink:href="#list-text" />
+                                        </svg>
+                                        <span class="sidebar-app__all-task">Все задачи</span>
+                                    </button>
+                                </div>
+                                <ul class="sidebar-app__list app-list">
+                                    <li class="sidebar-app__item app-item app-item-red app-item-active">
+                                        <span class="app-item__title">Покупки</span>
+                                        <svg class="icon svg-item">
+                                            <use xlink:href="#add" />
+                                        </svg>
+                                    </li>  
+                                    <li class="sidebar-app__item app-item app-item-green">
+                                        <span class="app-item__title">Задачи</span>
+                                        <svg class="icon svg-item">
+                                            <use xlink:href="#add" />
+                                        </svg>
+                                    </li> 
+                                    <li class="sidebar-app__item app-item app-item-blue">
+                                        <span class="app-item__title">Покупки</span>
+                                        <svg class="icon svg-item">
+                                            <use xlink:href="#add" />
+                                        </svg>
+                                    </li>  
+                                    
+                                </ul>
+                            </div>
+                            <div class="sidebar-app__footer app-footer">
+                                <button class="app-footer__btn">
                                     <svg class="icon svg">
-                                        <use xlink:href="#list-text" />
+                                        <use xlink:href="#add" />
                                     </svg>
-                                    <span class="navbar-app__all-task">Все задачи</span>
+                                    <span class="app-footer__add-task">Добавить папку</span>
                                 </button>
                             </div>
-                            <ul class="navbar-app__list">
-                                <li class="navbar-app__item">Покупки</li>  
-                                <li class="navbar-app__item">Задачи</li> 
-                            </ul>
-                            <div class="navbar-app__add">
-                                <svg class="icon svg">
-                                    <use xlink:href="#add" />
-                                </svg>
-                                <span class="navbar-app__add-task">Добавить папку</span>
-                            </div>
-                        </div>
+                        </aside>
                     </div>
-                    <div class="col-xl-8 col-lg-8 col-md-12 pl-0">
-                        <main class="main-app inner">
 
+                    <div class="col-xl-8 col-lg-8 col-md-12 pl-0">
+                        <main class="main-app">
+                            <div class="main-app__hidden-task hidden-task" hidden>
+                                <span class="hidden-task__title">Задачи отсутствуют</span>
+                            </div>
+                            <div class="main-app__content">
+                                <div class="main-app__header">
+                                    <div class="main-app__title-block title-group-task">
+                                        <input class="title-group-task__name" value="Фронтенд"/>
+                                    </div>
+                                    <div class="main-app__task-list">
+                                        <ul class="main-app__list">
+                                           <li class="main-app__task-item task-item">
+                                               <input class="task-item__checkbox" type="checkbox" name="" id="task-item">
+                                               <label class="task-item__name" for="task-item"> купить</label>
+                                           </li> 
+                                        </ul>
+                                    </div>
+                                    <div class="main-app__add-task">
+                                        
+                                    </div>
+                                </div>
+                            </div>
                         </main>
                     </div>
                 </div>
